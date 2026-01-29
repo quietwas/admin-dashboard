@@ -17,6 +17,8 @@
     z-index: 10;
     display: grid;
     grid-template-rows: 1fr 2fr;
+    padding: 25px;
+    font-weight: bold;
 }
 
 .header > * svg {
@@ -32,13 +34,32 @@ input {
     border-style: none;
     background-color: #dbe0eb;
     border-radius: 10px;
+    width: 800px; 
 }
 
 .tool {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.tool div, .tool p{
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search div {
+    display: flex;
+    gap: 15px;
+}
+
+.profile {
+    display: flex;
+    gap: 15px;
+}
+
+.tool div, .tool p, .search div{
     background-color: white;
 }
 
@@ -46,7 +67,15 @@ button {
     background-color: #3882F6;
     color: white;
     border-style: none;
-    border-radius: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 10px;
+    width: 100px;
+}
+
+.buttons {
+    display: flex;
+    gap: 25px;
 }
 
 .sidebar {
@@ -119,7 +148,7 @@ button {
     gap: 30px;
 }
 
-.links svg {
+.links svg, .trending svg{
     background-color: white;
     height:25px;
     fill: rgb(73, 73, 73);
@@ -129,7 +158,52 @@ button {
     background-color: white;
 }
 
-.footer {
-    background-color: black;
-    grid-column: 1 / 4;
+.announcements {
+    padding: 6%;
+}
+
+.announcements .card {
+    border-left: none;
+    padding: 25px;
+    font-size: small;
+}
+
+hr {
+    margin-top: 15px;
+    margin-bottom: 15px
+}
+
+.announcements .title, .trending .title {
+    font-size: medium;
+    padding-bottom: 2px;
+}
+
+.trending {
+    padding: 6%;
+}
+
+.trending hr{
+    border: none;
+}
+
+.trending .at {
+    background-color: white;
+    color: black
+}
+
+
+.trending .card {
+    border-left: none;
+    padding: 25px;
+    font-size: medium;
+}
+
+.trend-account {
+    background-color: white;
+    display: flex;
+    gap: 10px;
+}
+
+.card div {
+    background-color: white;
 }
